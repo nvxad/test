@@ -1478,9 +1478,20 @@ figcaption {
   text-decoration: underline;
 }
 
-.flex-block {
-  justify-content: space-between;
+.flex-block-succ-s {
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  flex-flow: row;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 0;
   display: flex;
+}
+
+.flex-block-succ-s.succ {
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .serviceblock {
@@ -1523,6 +1534,27 @@ figcaption {
   display: inline-block;
 }
 
+.container-5 {
+  background-color: #344d59;
+  width: 60%;
+  margin-top: 223px;
+  padding-top: 12px;
+  padding-right: 0;
+}
+
+.button-6 {
+  text-align: center;
+  background-color: #709ca7;
+  width: 50%;
+  margin-top: 0;
+  margin-bottom: 80px;
+}
+
+.heading-7 {
+  color: #fff;
+  font-size: 20px;
+}
+
 @media screen and (min-width: 1920px) {
   .button.cc-contact-us {
     cursor: pointer;
@@ -1541,6 +1573,7 @@ figcaption {
 
   .heading-jumbo-small {
     font-size: 30px;
+    line-height: 30px;
   }
 
   .menu {
@@ -1633,7 +1666,7 @@ figcaption {
     background-size: auto;
   }
 
-  .flex-block {
+  .flex-block-succ-s {
     margin-top: 155px;
   }
 
@@ -1881,7 +1914,7 @@ figcaption {
     font-size: 12px;
   }
 
-  .flex-block {
+  .flex-block-succ-s {
     grid-column-gap: 39px;
     grid-row-gap: 39px;
     flex-flow: column;
